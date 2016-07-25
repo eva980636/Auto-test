@@ -92,7 +92,10 @@ public class window_lib extends UiAutomatorTestCase{
 		objectHead.dragTo(1000, 500, 10);
 		Thread.sleep(1000);
 		// 强制关闭程序
-		Runtime.getRuntime().exec("am force-stop " + appName);
+		Runtime.getRuntime().exec("am force-stop " + appName.substring(0, appName.indexOf("/")));
+		System.out.println("_______+__))(*&&" +appName.substring(0, appName.indexOf("/")));
+		Thread.sleep(1000);
+
 		device.pressHome();
 	}
 }
