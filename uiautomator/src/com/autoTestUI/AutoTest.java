@@ -13,6 +13,22 @@ public class AutoTest {
 	// {"包名.类名", "执行的函数名"}
 	static String[][] testClassFuncName = {
 		{"com.autoTestUI.calc", "testcalc"},
+		{ "com.autoTestUI.clock", "testclock" },
+		{ "com.autoTestUI.date", "testdate" },
+		{ "com.autoTestUI.email", "testemail" },
+		{ "com.autoTestUI.adobe_acrobat_dc", "testadobe_acrobat_dc" },
+		{ "com.autoTestUI.gdmap", "testgdmap" },
+		{ "com.autoTestUI.microsoft_execl", "testmicrosoft_execl" },
+		{ "com.autoTestUI.microsoft_onenote", "microsoft_onenote" },
+		{ "com.autoTestUI.microsoft_outlook", "testmicrosoft_outlook" },
+		{ "com.autoTestUI.microsoft_powerpoint", "testmicrosoft_powerpoint" },
+		{ "com.autoTestUI.microsoft_word", "testmicrosoft_word" },
+		{ "com.autoTestUI.note", "testnote" },
+		{ "com.autoTestUI.tencent_video", "testtencent_video" },
+		{ "com.autoTestUI.VLC", "testVLC" },
+		{ "com.autoTestUI.wps", "testwps" },
+		/**/
+		{"com.autoTestUI.calc", "testcalc"},
 		{"com.autoTestUI.music", "testmusic"},
 		{ "com.autoTestUI.terminal", "testterminal" },
 		{ "com.autoTestUI.termuxl", "testtermux" },		
