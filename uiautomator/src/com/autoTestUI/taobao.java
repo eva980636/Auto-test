@@ -4,7 +4,9 @@ import java.io.IOException;
 import android.os.RemoteException;
 
 import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 public class taobao extends UiAutomatorTestCase {
@@ -16,7 +18,16 @@ public class taobao extends UiAutomatorTestCase {
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
 		String appName = "com.taobao.taobao/com.taobao.tao.homepage.MainActivity3";
-
+		Runtime.getRuntime().exec("am start -n " + appName);
+		Thread.sleep(5000);
+		
+		boolean dumpFirstStart = new UiObject(new UiSelector().text("更新包")).exists();
+		
+		if (dumpFirstStart == true) {
+			UiObject cancelButton = new UiObject(new UiSelector().text("取消"));
+			
+			cancelButton.click();
+		}	
 		window_lib.windowtest(device, appName);
 		// start testing itself
 		/*
@@ -26,6 +37,4 @@ public class taobao extends UiAutomatorTestCase {
 		 * e.printStackTrace(); } sleep(500);
 		 */
 	}
-
-	
 }

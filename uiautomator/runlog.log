@@ -1,0 +1,1291 @@
+Added file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 18 source files to /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] Converting compiled files and external libraries into /mnt/sdcmnt/Auto-test/uiautomator/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /mnt/sdcmnt/Auto-test/uiautomator/bin/otoAutoTest.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+146 KB/s (6347 bytes in 0.042s)
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0xec
+INSTRUMENTATION_RESULT: shortMsg=java.lang.RuntimeException
+INSTRUMENTATION_RESULT: longMsg=Didn't find class "com.autoTestUI.calc" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/uiautomator.jar", zip file "/data/local/tmp/otoAutoTest.jar"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]
+INSTRUMENTATION_CODE: 0
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.music:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testmusic
+INSTRUMENTATION_STATUS: class=com.autoTestUI.music
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testmusic
+INSTRUMENTATION_STATUS: class=com.autoTestUI.music
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 26.612
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.terminal:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testterminal
+INSTRUMENTATION_STATUS: class=com.autoTestUI.terminal
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testterminal
+INSTRUMENTATION_STATUS: class=com.autoTestUI.terminal
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 26.409
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_RESULT: shortMsg=java.lang.RuntimeException
+INSTRUMENTATION_RESULT: longMsg=Didn't find class "com.autoTestUI.termuxl" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/uiautomator.jar", zip file "/data/local/tmp/otoAutoTest.jar"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]
+INSTRUMENTATION_CODE: 0
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.wpspro:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testwpspro
+INSTRUMENTATION_STATUS: class=com.autoTestUI.wpspro
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testwpspro
+INSTRUMENTATION_STATUS: class=com.autoTestUI.wpspro
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 26.787
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.wpsemail:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testwpsemail
+INSTRUMENTATION_STATUS: class=com.autoTestUI.wpsemail
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testwpsemail
+INSTRUMENTATION_STATUS: class=com.autoTestUI.wpsemail
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 25.112
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_RESULT: shortMsg=java.lang.RuntimeException
+INSTRUMENTATION_RESULT: longMsg=Didn't find class "com.autoTestUI.firfefox" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/uiautomator.jar", zip file "/data/local/tmp/otoAutoTest.jar"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]
+INSTRUMENTATION_CODE: 0
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.qq:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testeqq
+INSTRUMENTATION_STATUS: class=com.autoTestUI.qq
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Failure in testeqq:
+junit.framework.AssertionFailedError: Method "testeqq" not found
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testeqq
+INSTRUMENTATION_STATUS: class=com.autoTestUI.qq
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Method "testeqq" not found
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.F
+Time: 0.017
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.wechat:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testewechat
+INSTRUMENTATION_STATUS: class=com.autoTestUI.wechat
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Failure in testewechat:
+junit.framework.AssertionFailedError: Method "testewechat" not found
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testewechat
+INSTRUMENTATION_STATUS: class=com.autoTestUI.wechat
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: Method "testewechat" not found
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.F
+Time: 0.015
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.wyiyunmusic:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testwyiyunmusic
+INSTRUMENTATION_STATUS: class=com.autoTestUI.wyiyunmusic
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testwyiyunmusic
+INSTRUMENTATION_STATUS: class=com.autoTestUI.wyiyunmusic
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 26.883
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.fm:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testfm
+INSTRUMENTATION_STATUS: class=com.autoTestUI.fm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testfm
+INSTRUMENTATION_STATUS: class=com.autoTestUI.fm
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 24.418
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.toutiao:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testtoutiao
+INSTRUMENTATION_STATUS: class=com.autoTestUI.toutiao
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testtoutiao
+INSTRUMENTATION_STATUS: class=com.autoTestUI.toutiao
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 26.348
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.baiduy:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testbaiduy
+INSTRUMENTATION_STATUS: class=com.autoTestUI.baiduy
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testbaiduy
+INSTRUMENTATION_STATUS: class=com.autoTestUI.baiduy
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 26.848
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.seafile:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testseafile
+INSTRUMENTATION_STATUS: class=com.autoTestUI.seafile
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testseafile
+INSTRUMENTATION_STATUS: class=com.autoTestUI.seafile
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 26.415
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.taobao:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testtaobao
+INSTRUMENTATION_STATUS: class=com.autoTestUI.taobao
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testtaobao
+INSTRUMENTATION_STATUS: class=com.autoTestUI.taobao
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 25.565
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.jd:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testjd
+INSTRUMENTATION_STATUS: class=com.autoTestUI.jd
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+左上 向左下改变窗口大小失败！
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testjd
+INSTRUMENTATION_STATUS: class=com.autoTestUI.jd
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 25.63
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 18 source files to /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] Found new input file
+      [dex] Converting compiled files and external libraries into /mnt/sdcmnt/Auto-test/uiautomator/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /mnt/sdcmnt/Auto-test/uiautomator/bin/otoAutoTest.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+error: protocol fault (no status)
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: protocol fault (no status)
+cannot bind 'tcp:5037'
+* daemon not running. starting it now on port 5037 *
+ADB server didn't ACK
+* failed to start daemon *
+error: cannot connect to daemon
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+cannot bind 'tcp:5037'
+adb server is out of date.  killing...
+ADB server didn't ACK
+* failed to start daemon *
+error: protocol fault (no status)
+cannot bind 'tcp:5037'
+adb server is out of date.  killing...
+ADB server didn't ACK
+* failed to start daemon *
+error: 
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+error: device not found
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /mnt/sdcmnt/Auto-test/uiautomator/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /mnt/sdcmnt/Auto-test/uiautomator/bin/otoAutoTest.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+error: protocol fault (no status)
+cannot bind 'tcp:5037'
+adb server is out of date.  killing...
+ADB server didn't ACK
+* failed to start daemon *
+error: 
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: protocol fault (no status)
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+error: device not found
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: device not found
+error: device offline
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+WARNING: linker: [vdso]: unused DT entry: type 0x6ffffef5 arg 0x160
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.autoTestUI.toutiao:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testtoutiao
+INSTRUMENTATION_STATUS: class=com.autoTestUI.toutiao
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: protocol fault (no status)
+cannot bind 'tcp:5037'
+adb server is out of date.  killing...
+ADB server didn't ACK
+* failed to start daemon *
+error: 
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: protocol fault (no status)
+cannot bind 'tcp:5037'
+adb server is out of date.  killing...
+ADB server didn't ACK
+* failed to start daemon *
+error: 
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+cannot bind 'tcp:5037'
+* daemon not running. starting it now on port 5037 *
+ADB server didn't ACK
+* failed to start daemon *
+error: cannot connect to daemon
+error: device not found
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+error: device not found
+error: device not found
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: protocol fault (no status)
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+** daemon still not running
+error: cannot connect to daemon
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+** daemon still not running
+error: cannot connect to daemon
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+cannot bind 'tcp:5037'
+* daemon not running. starting it now on port 5037 *
+ADB server didn't ACK
+* failed to start daemon *
+error: cannot connect to daemon
+error: device not found
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: protocol fault (no status)
+cannot bind 'tcp:5037'
+adb server is out of date.  killing...
+ADB server didn't ACK
+* failed to start daemon *
+error: 
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+cannot bind 'tcp:5037'
+* daemon not running. starting it now on port 5037 *
+ADB server didn't ACK
+* failed to start daemon *
+error: cannot connect to daemon
+error: device not found
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: protocol fault (no status)
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+error: device not found
+error: device not found
+cannot bind 'tcp:5037'
+* daemon not running. starting it now on port 5037 *
+ADB server didn't ACK
+* failed to start daemon *
+error: cannot connect to daemon
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+cannot bind 'tcp:5037'
+* daemon not running. starting it now on port 5037 *
+ADB server didn't ACK
+* failed to start daemon *
+error: cannot connect to daemon
+error: device not found
+error: device not found
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+error: device not found
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Updated file /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+Buildfile: /mnt/sdcmnt/Auto-test/uiautomator/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.1.1
+ [checkenv] Installed at /home/emindsoft/android-dev/android-sdk-linux
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 23.0.2
+     [echo] Resolving Build Target for otoAutoTest...
+[getuitarget] Project Target:   Android 5.1.1
+[getuitarget] API level:        22
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /mnt/sdcmnt/Auto-test/uiautomator/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+error: device not found
+error: protocol fault (no status)
+cannot bind 'tcp:5037'
+* daemon not running. starting it now on port 5037 *
+ADB server didn't ACK
+* failed to start daemon *
+error: cannot connect to daemon
+error: device not found
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+** daemon still not running
+error: cannot connect to daemon
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+** daemon still not running
+error: cannot connect to daemon

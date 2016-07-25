@@ -4,7 +4,9 @@ import java.io.IOException;
 import android.os.RemoteException;
 
 import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 public class jd extends UiAutomatorTestCase {
@@ -16,7 +18,17 @@ public class jd extends UiAutomatorTestCase {
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
 		String appName = "com.jingdong.app.mall/com.jingdong.app.mall.MainFrameActivity";
-
+		
+		Runtime.getRuntime().exec("am start -n " + appName);
+		Thread.sleep(5000);
+		
+		boolean dumpFirstStart = new UiObject(new UiSelector().text("发现新版本")).exists();
+		
+		if (dumpFirstStart == true) {
+			UiObject stopButton = new UiObject(new UiSelector().resourceId("com.jingdong.app.mall:id/aj"));
+			
+			stopButton.click();
+		}	
 		window_lib.windowtest(device, appName);
 		// start testing itself
 		/*

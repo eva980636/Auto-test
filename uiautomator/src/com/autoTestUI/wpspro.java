@@ -4,7 +4,9 @@ import java.io.IOException;
 import android.os.RemoteException;
 
 import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 public class wpspro extends UiAutomatorTestCase {
@@ -16,7 +18,17 @@ public class wpspro extends UiAutomatorTestCase {
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
 		String appName = "com.kingsoft.moffice_pro/cn.wps.moffice.main.local.home.PadHomeActivity";
-
+		
+		Runtime.getRuntime().exec("am start -n " + appName);
+		Thread.sleep(4000);
+		
+		boolean dumpFirstStart = new UiObject(new UiSelector().text("WPS Office Activathion")).exists();
+		
+		if (dumpFirstStart == true) {
+			UiObject sureButton = new UiObject(new UiSelector().text("Try Now"));
+			
+			sureButton.click();
+		}
 		window_lib.windowtest(device, appName);
 		// start testing itself
 		/*
