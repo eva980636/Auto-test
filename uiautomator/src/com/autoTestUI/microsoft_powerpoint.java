@@ -17,7 +17,7 @@ public class microsoft_powerpoint extends UiAutomatorTestCase {
 		device.wakeUp();
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
-		String appName = "com.microsoft.office.powerpoint/com.microsoft.office.apphost.LaunchActivit";
+		String appName = "com.microsoft.office.powerpoint/com.microsoft.office.apphost.LaunchActivity";
 
 		Runtime.getRuntime().exec("am start -n " + appName);
 		Thread.sleep(4000);

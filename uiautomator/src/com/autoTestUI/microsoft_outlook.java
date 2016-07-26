@@ -15,7 +15,7 @@ public class microsoft_outlook extends UiAutomatorTestCase {
 		device.wakeUp();
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
-		String appName = "com.microsoft.office.outlook/com.acompli.acompli.ui.onboarding.SplashActivity";
+		String appName = "com.microsoft.office.outlook/com.microsoft.office.outlook.MainActivity";
 
 		window_lib.windowtest(device, appName);
 		// start testing itself
