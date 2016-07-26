@@ -43,7 +43,20 @@ public class AutoTest {
 		{"com.autoTestUI.baiduy", "testbaiduy"},
 		{"com.autoTestUI.seafile", "testseafile"},
 		{"com.autoTestUI.taobao", "testtaobao"},
-		{"com.autoTestUI.jd", "testjd"}		
+		{"com.autoTestUI.jd", "testjd"},
+		/**/
+		{"com.autoTestUI.angrybird", "testangrybird"},
+		{"com.autoTestUI.appstore", "testappstore"},
+		{"com.autoTestUI.czfilemanager", "testczfilemanager"},
+		{"com.autoTestUI.esfilemanager", "testesfilemanager"},
+		{"com.autoTestUI.gugepinyin", "testgugepinyin"},
+		{"com.autoTestUI.meitu", "testmeitu"},
+		{"com.autoTestUI.tuniu", "testtuniu"},
+		{"com.autoTestUI.wandoujia", "testwandoujia"},
+		{"com.autoTestUI.xiaoying", "testxiaoying"},
+		{"com.autoTestUI.xiecheng", "xiecheng"},
+		{"com.autoTestUI.xuetang", "testxuetang"},
+		{"com.autoTestUI.yx_2048", "testyx"}
 	};
 
 	public static void main(String[] args) throws IOException {
@@ -58,7 +71,7 @@ public class AutoTest {
 		 * }
 		 */
 		// adb connect 192.168.0.105
-		Runtime.getRuntime().exec("adb connect 192.168.0.105");
+		Runtime.getRuntime().exec("adb connect 192.168.0.179");
 		
 		// 将编译生成的jar push到 目标环境
 		uiRun.pushTestJar(projectName + ".jar");
