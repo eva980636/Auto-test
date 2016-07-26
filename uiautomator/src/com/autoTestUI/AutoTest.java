@@ -5,7 +5,7 @@ import java.io.IOException;
 public class AutoTest {
 
 	// 需要根据环境修改，如：查看5.1版本对应android stdio的id（ android list target )
-	static String androidTargetId = "1";
+	static String androidTargetId = "4";
 
 	// project name 最后生成的jar包名字 projectName.jar
 	static String projectName = "otoAutoTest";
@@ -28,15 +28,14 @@ public class AutoTest {
 		{ "com.autoTestUI.VLC", "testVLC" },
 		{ "com.autoTestUI.wps", "testwps" },
 		/**/
-		{"com.autoTestUI.calc", "testcalc"},
 		{"com.autoTestUI.music", "testmusic"},
 		{ "com.autoTestUI.terminal", "testterminal" },
 		{ "com.autoTestUI.termuxl", "testtermux" },		
 		{ "com.autoTestUI.wpspro", "testwpspro" },
 		{ "com.autoTestUI.wpsemail", "testwpsemail" },
-		{ "com.autoTestUI.firfefox", "testefirefox" },
-		{ "com.autoTestUI.qq", "testeqq" },
-		{ "com.autoTestUI.wechat", "testewechat" },
+		{ "com.autoTestUI.firefox", "testfirefox" },
+		{ "com.autoTestUI.qq", "testqq" },
+		{ "com.autoTestUI.wechat", "testwechat" },
 		{ "com.autoTestUI.wyiyunmusic", "testwyiyunmusic" },
 		{"com.autoTestUI.fm", "testfm"},
 		{"com.autoTestUI.toutiao", "testtoutiao"},
@@ -57,6 +56,7 @@ public class AutoTest {
 		{"com.autoTestUI.xiecheng", "xiecheng"},
 		{"com.autoTestUI.xuetang", "testxuetang"},
 		{"com.autoTestUI.yx_2048", "testyx"}
+
 	};
 
 	public static void main(String[] args) throws IOException {
@@ -71,7 +71,7 @@ public class AutoTest {
 		 * }
 		 */
 		// adb connect 192.168.0.105
-		Runtime.getRuntime().exec("adb connect 192.168.0.179");
+		Runtime.getRuntime().exec("adb connect 192.168.0.105");
 		
 		// 将编译生成的jar push到 目标环境
 		uiRun.pushTestJar(projectName + ".jar");
