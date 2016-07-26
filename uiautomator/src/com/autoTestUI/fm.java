@@ -22,10 +22,10 @@ public class fm extends UiAutomatorTestCase {
 		Runtime.getRuntime().exec("am start -n " + appName);
 		Thread.sleep(5000);
 		
-		boolean dumpFirstStart = new UiObject(new UiSelector().text("温馨提示")).exists();
+		boolean dumpFirstStart = new UiObject(new UiSelector().resourceId("com.ximalaya.ting.android:id/title_tv")).exists();
 		
 		if (dumpFirstStart == true) {
-			UiObject cancelButton = new UiObject(new UiSelector().text("下次再说"));
+			UiObject cancelButton = new UiObject(new UiSelector().resourceId("com.ximalaya.ting.android:id/neutral_btn"));
 			
 			cancelButton.click();
 		}	

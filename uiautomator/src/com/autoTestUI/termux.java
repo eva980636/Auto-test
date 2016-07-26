@@ -17,15 +17,15 @@ public class termux extends UiAutomatorTestCase {
 		device.wakeUp();
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
-		String appName = "com.termux/com.termux.app.TermuxActivity";
+		String appName = "com.termux/.app.TermuxActivity";
 		
 		Runtime.getRuntime().exec("am start -n " + appName);
 		Thread.sleep(5000);
 		
-		boolean dumpFirstStart = new UiObject(new UiSelector().text("Welcome to Termux")).exists();
+		boolean dumpFirstStart = new UiObject(new UiSelector().resourceId("android:id/alertTitle")).exists();
 		
 		if (dumpFirstStart == true) {
-			UiObject sureButton = new UiObject(new UiSelector().text("OK"));
+			UiObject sureButton = new UiObject(new UiSelector().resourceId("android:id/button2"));
 			
 			sureButton.click();
 		}	

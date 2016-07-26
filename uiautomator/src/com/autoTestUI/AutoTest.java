@@ -12,6 +12,7 @@ public class AutoTest {
 
 	// {"包名.类名", "执行的函数名"}
 	static String[][] testClassFuncName = {
+		/**/
 		{"com.autoTestUI.calc", "testcalc"},
 		{ "com.autoTestUI.clock", "testclock" },
 		{ "com.autoTestUI.date", "testdate" },
@@ -27,10 +28,10 @@ public class AutoTest {
 		{ "com.autoTestUI.tencent_video", "testtencent_video" },
 		{ "com.autoTestUI.VLC", "testVLC" },
 		{ "com.autoTestUI.wps", "testwps" },
-		/**/
+	    /**/
 		{"com.autoTestUI.music", "testmusic"},
 		{ "com.autoTestUI.terminal", "testterminal" },
-		{ "com.autoTestUI.termuxl", "testtermux" },		
+		{ "com.autoTestUI.termux", "testtermux" },		
 		{ "com.autoTestUI.wpspro", "testwpspro" },
 		{ "com.autoTestUI.wpsemail", "testwpsemail" },
 		{ "com.autoTestUI.firefox", "testfirefox" },
@@ -56,7 +57,6 @@ public class AutoTest {
 		{"com.autoTestUI.xiecheng", "xiecheng"},
 		{"com.autoTestUI.xuetang", "testxuetang"},
 		{"com.autoTestUI.yx_2048", "testyx"}
-
 	};
 
 	public static void main(String[] args) throws IOException {
