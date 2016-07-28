@@ -14,7 +14,7 @@ public class window_lib extends UiAutomatorTestCase{
 	public static void windowtest(UiDevice device, String appName)
 			throws UiObjectNotFoundException, RemoteException, IOException, InterruptedException {
 
-		Runtime.getRuntime().exec("am start -n " + appName);
+		otoDisplayRun.execCmd("am start -n " + appName);
 		Thread.sleep(3000);
 
 		// 改变窗体大小 左上拉动 改变大小
@@ -83,8 +83,7 @@ public class window_lib extends UiAutomatorTestCase{
 		objectClose.click();
 		Thread.sleep(1000);
 		// 重新启动程序
-		Runtime.getRuntime().exec("am start -n " + appName);
-		Thread.sleep(3000);
+		otoDisplayRun.execCmd("am start -n " + appName);
 
 		// 拖动程序 拖动程序后， 窗口最大化/最小化等位置将无法通过resourceId获取到
 		UiObject objectHead = new UiObject(
@@ -92,9 +91,7 @@ public class window_lib extends UiAutomatorTestCase{
 		objectHead.dragTo(1000, 500, 10);
 		Thread.sleep(1000);
 		// 强制关闭程序
-		Runtime.getRuntime().exec("am force-stop " + appName.substring(0, appName.indexOf("/")));
-		System.out.println("_______+__))(*&&" +appName.substring(0, appName.indexOf("/")));
-		Thread.sleep(1000);
+		otoDisplayRun.execCmd("am force-stop " + appName.substring(0, appName.indexOf("/")));
 
 		device.pressHome();
 	}

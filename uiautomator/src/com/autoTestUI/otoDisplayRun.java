@@ -11,14 +11,20 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class otoDisplayRun {
-
+	
 	private static String workspace_path;
 	
-	public  otoDisplayRun(String projectName, String androidTargetId) {
-		System.out.println("-----------build--uiautomator--obj--jar--file----------");
+	public  otoDisplayRun() throws InterruptedException {
 		workspace_path = getWorkSpase();
 		System.out.println("----工作空间：\t\n" + workspace_path);
-
+	}
+	
+	// 1 创建 build.xml
+	public void buildObjJarFile (String projectName, String androidTargetId) throws InterruptedException {
+		System.out.println("**********************");
+		System.out.println("---START BUILDING----");
+		System.out.println("**********************");
+		
 		// 1 创建 build.xml
 		execCmd("android create uitest-project -n " + projectName + " -t "
 				+ androidTargetId + " -p " + workspace_path);
@@ -40,12 +46,14 @@ public class otoDisplayRun {
 	
 	/**
 	 * 执行cmd命令，且输出信息到控制台
+	 * @throws InterruptedException 
 	 */
-	public void execCmd(String cmd) {
+	public static int execCmd(String cmd) throws InterruptedException {
+		int ret = 0;
 		System.out.println("----execCmd:  " + cmd);
 		try {
 			Process p = Runtime.getRuntime().exec(cmd);
-			//正确输出流
+			//正确输出流 输出到log 信息
 			InputStream input = p.getInputStream();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(
 					input));
@@ -54,22 +62,26 @@ public class otoDisplayRun {
 				System.out.println(line);
                 saveToFile(line, "runlog.log", false);
 			}
-			//错误输出流
+			//错误输出流,将标准错误转为标准输出（防止子进程运行阻塞）
 			InputStream errorInput = p.getErrorStream();
 			BufferedReader errorReader = new BufferedReader(new InputStreamReader(
 					errorInput));
-			String eline = "";
+			String eline = null;
 			while ((eline = errorReader.readLine()) != null) {
-				System.out.println(eline);
+				System.out.println("<ERROR>" + eline);
                 saveToFile(eline, "runlog.log", false);
-			}       
+			}
+
+			ret = p.waitFor();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		return ret;
 	}
 	
 	// 将运行结果保存至文件中
-    public void saveToFile(String text,String path,boolean isClose) {
+    public static void saveToFile(String text,String path,boolean isClose) {
     	File file=new File("runlog.log");   	
 		BufferedWriter bf=null;
 		try {
@@ -91,18 +103,18 @@ public class otoDisplayRun {
 	}
     
 	// 3---push jar
-	public void pushTestJar(String jarName) {
-		String jarFile = workspace_path + "/bin/" + jarName;
-		String objPath = "/data/local/tmp/";
-		String pushCmd = "adb push " + jarFile + " " + objPath;
+	public int pushTestJar(String jarName, String objJarPath) throws InterruptedException {
+		String jarFile = workspace_path + "/" + objJarPath + jarName;
+		String targetPath = "/data/local/tmp/";
+		String pushCmd = "adb push " + jarFile + " " + targetPath;
 		
 		System.out.println("----jar包路径： " +  jarFile);
 		System.out.println("----" + pushCmd);
-		execCmd(pushCmd);
+		return execCmd(pushCmd);
 	}
 	
 	// 4 run test
-	public void runTest(String jarName, String className, String testFuncName) {
+	public void runTest(String jarName, String className, String testFuncName) throws InterruptedException {
 		String testCmd = "adb shell uiautomator runtest " + jarName + " --nohup -c " + className + "#" + testFuncName;
 		System.out.println("----runTest:  " + testCmd);
 		execCmd(testCmd);

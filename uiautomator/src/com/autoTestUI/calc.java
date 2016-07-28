@@ -65,8 +65,6 @@ public class calc extends UiAutomatorTestCase {
 		
 		String result = resultWindow.getText();
 		
-		System.out.println("&&&&&&&&&" + result);
-		
 		if (result.compareTo("50") == 0) {
 			System.out.println("testing calc pass!!!!" + result);
 		} else {

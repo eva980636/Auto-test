@@ -2,24 +2,41 @@ package com.autoTestUI;
 
 import java.io.IOException;
 
-public class AutoTest {
-	public static void main(String[] args) throws IOException {
+public class AutoTest {	
+	public static void main(String[] args) throws IOException, InterruptedException {
 		int i;
+		int ret = 0;
+		String objJarPath = "bin/";
+		String objJarName = env.projectName + ".jar";
+		// 创建对象
+		otoDisplayRun uiRun = new otoDisplayRun();
+
+		if (args.length > 0) {
+			if (args.length < 3) {
+				System.out.println("usage: java -jar *.jar targetIp otoAutoTest.jar");
+			}
+			objJarPath = "";
+			env.targetIp = args[3];
+			objJarName = args[4];
+		} else {
+			//创建 build.xml 并且编译 生成projectName.jar
+			uiRun.buildObjJarFile(env.projectName, env.androidTargetId);
+			System.out.println("connect target ip is :" +  env.targetIp);
+		}
 		
-		// 创建对象的同时，创建 build.xml 并且编译 生成projectName.jar
-		otoDisplayRun uiRun = new otoDisplayRun(env.projectName, env.androidTargetId);
-		/*
-		 * if (args.length != 2) { System.out.println(
-		 * "usage: java -jar *.jar connect_dev_ip path_otoAutoTest_jarfile");
-		 * return; } else {
-		 * 
-		 * }
-		 */
 		// adb connect + ip
-		Runtime.getRuntime().exec("adb connect " + env.targetIp);
-		
+		ret = otoDisplayRun.execCmd("adb connect " + env.targetIp + " | grep unable");
+		if (ret != 1) {
+			System.out.println("adb connect" + env.targetIp + " failed!");
+			return;
+		}
+
 		// 将编译生成的jar push到 目标环境
-		uiRun.pushTestJar(env.projectName + ".jar");
+		ret = uiRun.pushTestJar(objJarName, objJarPath);
+		if (ret != 0) {
+			System.out.println("adb push  failed!");
+			return;
+		}
 
 		System.out.println("**********************");
 		System.out.println("----START TESTING----");
