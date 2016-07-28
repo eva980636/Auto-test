@@ -22,7 +22,7 @@ public class wpspro extends UiAutomatorTestCase {
 		Runtime.getRuntime().exec("am start -n " + appName);
 		Thread.sleep(4000);
 		
-		boolean dumpFirstStart = new UiObject(new UiSelector().text("WPS Office Activathion")).exists();
+		boolean dumpFirstStart = new UiObject(new UiSelector().resourceId("com.kingsoft.moffice_pro:id/dialog_title")).exists();
 		
 		if (dumpFirstStart == true) {
 			UiObject sureButton = new UiObject(new UiSelector().text("Try Now"));
