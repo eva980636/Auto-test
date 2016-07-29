@@ -25,11 +25,7 @@ public class AutoTest {
 		}
 		
 		// adb connect + ip
-		ret = otoDisplayRun.execCmd("adb connect " + env.targetIp + " | grep unable");
-		if (ret != 1) {
-			System.out.println("adb connect" + env.targetIp + " failed!");
-			return;
-		}
+		ret = otoDisplayRun.execCmd("adb connect " + env.targetIp);
 
 		// 将编译生成的jar push到 目标环境
 		ret = uiRun.pushTestJar(objJarName, objJarPath);

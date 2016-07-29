@@ -19,15 +19,10 @@ public class email extends UiAutomatorTestCase {
 
 		String appName = "com.android.email/com.android.email.activity.Welcome";
 
-		window_lib.windowtest(device, appName);
-		try {
-			Runtime.getRuntime().exec(
-					" am start -n " + appName);
-		} catch (IOException e) {
-			// TODO auto-generated catch block
-			e.printStackTrace();
-		}
-		sleep(500);
+		//window_lib.windowtest(device, appName);
+		
+		otoDisplayRun.execCmdNoSave(
+				" am start -n " + appName);
 	
 		// input  email accout
 		UiObject eaddress = new UiObject(new UiSelector().className("android.widget.EditText"));
