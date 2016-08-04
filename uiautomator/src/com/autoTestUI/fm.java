@@ -19,8 +19,8 @@ public class fm extends UiAutomatorTestCase {
 
 		String appName = "com.ximalaya.ting.android/com.ximalaya.ting.android.activity.MainActivity";
 		
-		Runtime.getRuntime().exec("am start -n " + appName);
-		Thread.sleep(5000);
+		otoDisplayRun.execCmd("am start -n " + appName);
+		
 		
 		boolean dumpFirstStart = new UiObject(new UiSelector().resourceId("com.ximalaya.ting.android:id/title_tv")).exists();
 		
@@ -29,6 +29,7 @@ public class fm extends UiAutomatorTestCase {
 			
 			cancelButton.click();
 		}	
+		
 		window_lib.windowtest(device, appName);
 		// start testing itself
 		/*

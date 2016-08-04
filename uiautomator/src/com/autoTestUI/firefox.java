@@ -19,7 +19,7 @@ public class firefox extends UiAutomatorTestCase {
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
 		String appName = "org.mozilla.firefox/org.mozilla.firefox.App";
-		Runtime.getRuntime().exec("am start -n "+ appName);
+		otoDisplayRun.execCmd("am start -n " + appName);
 		//open sina.com.cn
 		UiObject titleObject=new UiObject(new UiSelector().resourceId("org.mozilla.firefox:id/url_bar_entry"));
 		titleObject.click();
@@ -63,7 +63,7 @@ public class firefox extends UiAutomatorTestCase {
 		Thread.sleep(1000);
 		
 
-		//window_lib.windowtest(device, appName);
+		window_lib.windowtest(device, appName);
 		// start testing itself
 		/*
 		 * try { Runtime.getRuntime().exec( " am start -n " + appName);

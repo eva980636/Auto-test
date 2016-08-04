@@ -18,8 +18,8 @@ public class qq extends UiAutomatorTestCase {
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
 		String appName = "com.tencent.mobileqq/com.tencent.mobileqq.activity.RegisterGuideActivity";
-		Runtime.getRuntime().exec("am start -n "+ appName);
-		Thread.sleep(4000);
+		otoDisplayRun.execCmd("am start -n " + appName);
+
 		
 		//sign in by username and passwd
 		UiObject denglu=new UiObject(new UiSelector().resourceId("com.tencent.mobileqq:id/btn_login"));

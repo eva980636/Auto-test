@@ -19,8 +19,7 @@ public class toutiao extends UiAutomatorTestCase {
 
 		String appName = "com.ss.android.article.news/com.ss.android.article.news.activity.MainActivity";
 		
-		Runtime.getRuntime().exec("am start -n " + appName);
-		Thread.sleep(4000);
+		otoDisplayRun.execCmd("am start -n " + appName);
 		
 		boolean dumpFirstStart = new UiObject(new UiSelector().text("是否创建桌面快捷方式")).exists();
 		
