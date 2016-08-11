@@ -22,11 +22,11 @@ public class microsoft_word extends UiAutomatorTestCase {
 		Runtime.getRuntime().exec("am start -n " + appName);
 		Thread.sleep(4000);
 		
-		boolean dumpFirstStart = new UiObject(new UiSelector().text("免费注册")).exists();
-		
+		boolean dumpFirstStart = new UiObject(
+				new UiSelector().resourceId("com.microsoft.office.word:id/docsui_signinview_signup_button")).exists();
 		if (dumpFirstStart == true) {
-			UiObject skipButton = new UiObject(new UiSelector().text("跳过"));
-			
+			UiObject skipButton = new UiObject(
+					new UiSelector().resourceId("com.microsoft.office.word:id/docsui_signinview_skipsignin"));
 			skipButton.click();
 		}
 		
