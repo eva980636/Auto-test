@@ -20,15 +20,17 @@ public class jd extends UiAutomatorTestCase {
 		String appName = "com.jingdong.app.mall/com.jingdong.app.mall.MainFrameActivity";
 		
 		Runtime.getRuntime().exec("am start -n " + appName);
-		Thread.sleep(5000);
 		
-		boolean dumpFirstStart = new UiObject(new UiSelector().text("发现新版本")).exists();
+		boolean dumpFirstStart = new UiObject(new UiSelector().resourceId("com.jingdong.app.mall:id/ao")).exists();
 		
 		if (dumpFirstStart == true) {
 			UiObject stopButton = new UiObject(new UiSelector().resourceId("com.jingdong.app.mall:id/aj"));
 			
 			stopButton.click();
 		}	
+		
+		
+		
 		window_lib.windowtest(device, appName);
 		// start testing itself
 		/*

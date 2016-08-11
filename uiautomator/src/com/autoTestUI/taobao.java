@@ -18,10 +18,9 @@ public class taobao extends UiAutomatorTestCase {
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
 		String appName = "com.taobao.taobao/com.taobao.tao.homepage.MainActivity3";
-		Runtime.getRuntime().exec("am start -n " + appName);
-		Thread.sleep(5000);
+		otoDisplayRun.execCmd("am start -n " + appName);
 		
-		boolean dumpFirstStart = new UiObject(new UiSelector().text("更新包")).exists();
+		boolean dumpFirstStart = new UiObject(new UiSelector().resourceId("com.taobao.taobao:id/title")).exists();
 		
 		if (dumpFirstStart == true) {
 			UiObject cancelButton = new UiObject(new UiSelector().text("取消"));
