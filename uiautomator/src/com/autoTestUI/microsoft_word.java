@@ -20,7 +20,7 @@ public class microsoft_word extends UiAutomatorTestCase {
 		String appName = "com.microsoft.office.word/com.microsoft.office.apphost.LaunchActivity";
 
 		Runtime.getRuntime().exec("am start -n " + appName);
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		
 		boolean dumpFirstStart = new UiObject(
 				new UiSelector().resourceId("com.microsoft.office.word:id/docsui_signinview_signup_button")).exists();

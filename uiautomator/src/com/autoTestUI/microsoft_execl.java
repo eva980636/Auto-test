@@ -21,7 +21,7 @@ public class microsoft_execl extends UiAutomatorTestCase {
 
 		// check if the first time open app
 		Runtime.getRuntime().exec("am start -n " + appName);
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		
 		boolean dumpFirstStart = new UiObject(
 				new UiSelector().resourceId("com.microsoft.office.excel:id/docsui_signinview_signup_button")).exists();

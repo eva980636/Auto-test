@@ -20,7 +20,7 @@ public class wpspro extends UiAutomatorTestCase {
 		String appName = "com.kingsoft.moffice_pro/cn.wps.moffice.main.local.home.PadHomeActivity";
 		
 		Runtime.getRuntime().exec("am start -n " + appName);
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		
 		boolean dumpFirstStart = new UiObject(new UiSelector().resourceId("com.kingsoft.moffice_pro:id/dialog_title")).exists();
 		
