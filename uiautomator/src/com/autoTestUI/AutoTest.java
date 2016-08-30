@@ -13,11 +13,11 @@ public class AutoTest {
 
 		if (args.length > 0) {
 			if (args.length < 3) {
-				System.out.println("usage: java -jar *.jar targetIp otoAutoTest.jar");
+				System.out.println("usage: java -jar *.jar targetIp otoAutoTest.jar " + args.length);
 			}
 			objJarPath = "";
-			env.targetIp = args[3];
-			objJarName = args[4];
+			env.targetIp = args[0];
+			objJarName = args[1];
 		} else {
 			//创建 build.xml 并且编译 生成projectName.jar
 			uiRun.buildObjJarFile(env.projectName, env.androidTargetId);
