@@ -13,6 +13,7 @@ import java.io.OutputStreamWriter;
 public class otoDisplayRun {
 	
 	private static String workspace_path;
+	public static String logFile;
 	
 	public  otoDisplayRun() throws InterruptedException {
 		workspace_path = getWorkSpase();
@@ -25,6 +26,7 @@ public class otoDisplayRun {
 		System.out.println("---START BUILDING----");
 		System.out.println("**********************");
 		
+		logFile = "runlog.log";
 		// 1 创建 build.xml
 		execCmd("android create uitest-project -n " + projectName + " -t "
 				+ androidTargetId + " -p " + workspace_path);
@@ -60,7 +62,7 @@ public class otoDisplayRun {
 			String line = "";
 			while ((line = reader.readLine()) != null) {
 				System.out.println(line);
-                saveToFile(line, "runlog.log", false);
+                saveToFile(line, logFile, false);
 			}
 			//错误输出流,将标准错误转为标准输出（防止子进程运行阻塞）
 			InputStream errorInput = p.getErrorStream();
@@ -69,7 +71,7 @@ public class otoDisplayRun {
 			String eline = null;
 			while ((eline = errorReader.readLine()) != null) {
 				System.out.println("<ERROR>" + eline);
-                saveToFile(eline, "runlog.log", false);
+                saveToFile(eline, logFile, false);
 			}
 
 			ret = p.waitFor();
@@ -81,8 +83,8 @@ public class otoDisplayRun {
 	}
 	
 	// 将运行结果保存至文件中
-    public static void saveToFile(String text,String path,boolean isClose) {
-    	File file=new File("runlog.log");   	
+    public static void saveToFile(String text,String logFile,boolean isClose) {
+    	File file=new File(logFile);   	
 		BufferedWriter bf=null;
 		try {
 		    FileOutputStream outputStream=new FileOutputStream(file,true);
@@ -139,8 +141,8 @@ public class otoDisplayRun {
 	}
 	
 	// 4 run test
-	public void runTest(String jarName, String className, String testFuncName) throws InterruptedException {
-		String testCmd = "adb shell uiautomator runtest " + jarName + " --nohup -c " + className + "#" + testFuncName;
+	public void runTest(String jarName, String className, String testFuncName, String port) throws InterruptedException {
+		String testCmd = "adb -s " + env.targetIp + ":" + port + " shell uiautomator runtest " + jarName + " --nohup -c " + className + "#" + testFuncName;
 		System.out.println("----runTest:  " + testCmd);
 		execCmd(testCmd);
 	}
