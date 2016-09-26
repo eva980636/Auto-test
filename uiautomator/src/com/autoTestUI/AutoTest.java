@@ -32,7 +32,7 @@ public class AutoTest {
 		ret = otoDisplayRun.execCmd("adb connect " + env.targetIp);
 
 		// 将编译生成的jar push到 目标环境
-		ret = uiRun.pushTestJar(objJarName, objJarPath);
+		ret = uiRun.pushTestJar(objJarName, objJarPath, objPort);
 		if (ret != 0) {
 			System.out.println("adb push  failed!");
 			return;

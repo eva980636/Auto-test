@@ -17,7 +17,8 @@ public class YY extends UiAutomatorTestCase {
 
 		String appName = "com.duowan.pad/com.duowan.pad.splash.SplashActivity";
 
-		//window_lib.windowtest(device, appName);
+		
+		 window_lib.windowtest(device, appName);
 		// start testing itself
 		/*
 		 * try { Runtime.getRuntime().exec( " am start -n " + appName);

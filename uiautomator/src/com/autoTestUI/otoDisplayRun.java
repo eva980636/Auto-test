@@ -130,10 +130,11 @@ public class otoDisplayRun {
 	}
     
 	// 3---push jar
-	public int pushTestJar(String jarName, String objJarPath) throws InterruptedException {
+	public int pushTestJar(String jarName, String objJarPath, String port) throws InterruptedException {
 		String jarFile = workspace_path + "/" + objJarPath + jarName;
 		String targetPath = "/data/local/tmp/";
-		String pushCmd = "adb push " + jarFile + " " + targetPath;
+		String pushCmd = "adb -s" +env.targetIp + ":" + port +"push " + jarFile + " " + targetPath;
+		
 		
 		System.out.println("----jar包路径： " +  jarFile);
 		System.out.println("----" + pushCmd);
