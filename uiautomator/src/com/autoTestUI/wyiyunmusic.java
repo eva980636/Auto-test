@@ -2,7 +2,6 @@ package com.autoTestUI;
 
 import java.io.IOException;
 import android.os.RemoteException;
-
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;

@@ -2,7 +2,6 @@ package com.autoTestUI;
 
 import java.io.IOException;
 import android.os.RemoteException;
-
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
@@ -11,7 +10,7 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 public class fm extends UiAutomatorTestCase {
 	public void testfm() throws UiObjectNotFoundException, RemoteException,
-			IOException, InterruptedException {
+			IOException, InterruptedException{
 		UiDevice device = getUiDevice();
 		// wake up screen
 		device.wakeUp();

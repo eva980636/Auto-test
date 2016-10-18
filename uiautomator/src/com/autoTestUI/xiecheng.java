@@ -15,7 +15,7 @@ public class xiecheng extends UiAutomatorTestCase {
 		device.wakeUp();
 		assertTrue("screen on :can't wakeup", device.isScreenOn());
 
-		String appName = "ctrip.android.view/ctrip.android.publicproduct.home.view.CtripHomeActivity";
+		String appName = "ctrip.android.view/ctrip.android.view.splash.CtripSplashActivity";
 
 		window_lib.windowtest(device, appName);
 		// start testing itself
