@@ -14,6 +14,7 @@ import java.io.OutputStreamWriter;
 public class otoDisplayRun {
 	
 	private static String workspace_path;
+	public static String logFile;
 	
 	public  otoDisplayRun() throws InterruptedException {
 		workspace_path = getWorkSpase();
@@ -26,6 +27,7 @@ public class otoDisplayRun {
 		System.out.println("---START BUILDING----");
 		System.out.println("**********************");
 		
+		logFile = "runlog.log";
 		// 1 创建 build.xml
 		execCmd("android create uitest-project -n " + projectName + " -t "
 				+ androidTargetId + " -p " + workspace_path);
@@ -70,8 +72,8 @@ public class otoDisplayRun {
 					ToFile(cmd.substring(cmd.lastIndexOf("test"))+".result:"+0,"apkresult",false);
 				}
 				System.out.println(line);
-                saveToFile(line, "runlog.log", false);
  			}
+                saveToFile(line, logFile, false);
 			//错误输出流,将标准错误转为标准输出（防止子进程运行阻塞）
 			InputStream errorInput = p.getErrorStream();
 			BufferedReader errorReader = new BufferedReader(new InputStreamReader(
@@ -79,7 +81,7 @@ public class otoDisplayRun {
 			String eline = null;
 			while ((eline = errorReader.readLine()) != null) {
 				System.out.println("<ERROR>" + eline);
-                saveToFile(eline, "runlog.log", false);
+                saveToFile(eline, logFile, false);
 			}
 			ret = p.waitFor();
 		} catch (IOException e) {
@@ -157,10 +159,11 @@ public class otoDisplayRun {
 	}
     
 	// 3---push jar
-	public int pushTestJar(String jarName, String objJarPath) throws InterruptedException, IOException{
+	public int pushTestJar(String jarName, String objJarPath, String port) throws InterruptedException, IOException {
 		String jarFile = workspace_path + "/" + objJarPath + jarName;
 		String targetPath = "/data/local/tmp/";
-		String pushCmd = "adb push " + jarFile + " " + targetPath;
+		String pushCmd = "adb -s" +env.targetIp + ":" + port +" push " + jarFile + " " + targetPath;
+		
 		
 		System.out.println("----jar包路径： " +  jarFile);
 		System.out.println("----" + pushCmd);
@@ -168,8 +171,8 @@ public class otoDisplayRun {
 	}
 	
 	// 4 run test
-	public void runTest(String jarName, String className, String testFuncName) throws InterruptedException, IOException{
-		String testCmd = "adb shell uiautomator runtest " + jarName + " --nohup -c " + className + "#" + testFuncName;
+	public void runTest(String jarName, String className, String testFuncName, String port) throws InterruptedException, IOException {
+		String testCmd = "adb -s " + env.targetIp + ":" + port + " shell uiautomator runtest " + jarName + " --nohup -c " + className + "#" + testFuncName;
 		System.out.println("----runTest:  " + testCmd);
 		execCmd(testCmd);
 	}
