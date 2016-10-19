@@ -76,8 +76,9 @@ public class otoDisplayRun {
 					ToFile(cmd.substring(cmd.lastIndexOf("test"))+".result:"+0,"apkresult",false);
 				}
 				System.out.println(line);
+                saveToFile(line, logFile, false);
  			}
-                 saveToFile(line, logFile, false);
+			
 			//错误输出流,将标准错误转为标准输出（防止子进程运行阻塞）
 			InputStream errorInput = p.getErrorStream();
 			BufferedReader errorReader = new BufferedReader(new InputStreamReader(
