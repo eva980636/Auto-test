@@ -4,10 +4,10 @@ import java.io.IOException;
 
 public class AutoTest {	
 	public static void main(String[] args) throws IOException, InterruptedException {
-		int i;
+	//	int i;
 		int ret = 0;
 		String objJarPath = "bin/";
-		String objPort = "5555";
+		otoDisplayRun.port = "5555";
 		String objJarName = env.projectName + ".jar";
 		// 创建对象
 		otoDisplayRun uiRun = new otoDisplayRun();
@@ -19,7 +19,7 @@ public class AutoTest {
 			}
 			objJarPath = "";
 			env.targetIp = args[0];
-			objPort = args[1];
+			otoDisplayRun.port = args[1];
 			objJarName = args[2];
 			otoDisplayRun.logFile = args[3];
 		} else {
@@ -28,29 +28,37 @@ public class AutoTest {
 			System.out.println("connect target ip is :" +  env.targetIp);
 		}
 		
+
 		// adb connect + ip
 		ret = otoDisplayRun.execCmd("adb connect " + env.targetIp);
 
 		// 将编译生成的jar push到 目标环境
-		ret = uiRun.pushTestJar(objJarName, objJarPath, objPort);
+		ret = uiRun.pushTestJar(objJarName, objJarPath);
 		if (ret != 0) {
 			System.out.println("adb push  failed!");
 			return;
 		}
 
 		System.out.println("**********************");
-		System.out.println("----START TESTING----");
+		System.out.println("----START " + env.testClassFuncName[0][0] + "---------");
 		System.out.println("**********************");
 
-		// 循环执行需要的测试 class
+		// 执行需要的测试 class
+		uiRun.runTest(env.projectName + ".jar", env.testClassFuncName[0][0],
+				env.testClassFuncName[0][1]);
+		
+
+	/*	
 		System.out.println("总测试数量： " + env.testClassFuncName.length);
 		for (i = 0; i < env.testClassFuncName.length; i++) {
 			uiRun.runTest(env.projectName + ".jar", env.testClassFuncName[i][0],
 					env.testClassFuncName[i][1], objPort);
-		}
+			}
+			*/
 
 		System.out.println("**********************");
 		System.out.println("----FINISH TESTING----");
 		System.out.println("**********************");
+	
 	}
 }
